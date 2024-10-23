@@ -26,7 +26,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     companion object {
         private const val TAG = "Polar_MainActivity"
-        private const val SHARED_PREFS_KEY = "polar_device_id"
+        private const val SHARED_PREFS_KEY = "C8C5DD2F"
         private const val PERMISSION_REQUEST_CODE = 1
     }
 

@@ -101,7 +101,8 @@ class HRActivity : AppCompatActivity(), PlotterListener {
             }
 
             override fun hrNotificationReceived(identifier: String, data: PolarHrData.PolarHrSample) {
-                //deprecated
+                plotter.addValues(data)
+                Toast.makeText(applicationContext,  "HR received: " + data.hr.toString(), Toast.LENGTH_SHORT).show()
             }
 
             override fun polarFtpFeatureReady(identifier: String) {
